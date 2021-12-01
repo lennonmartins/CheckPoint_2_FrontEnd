@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Formulário Cadastro</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <div>
+                <h1> Conheça Campo Grande !</h1>
+            </div>
+            <form >
+                <div class="infos">
+                    <label for="nome"></label> <strong> Nome:</strong></label>
+                    <input type="text" id="nome" name="nome" placeholder="Jose da Silva" required maxlength="100">
+                    
+                    <label><strong>Data de Nascimento</strong> </label>
+                    <input type="date" id="data" name="data"  required>
+                    
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="joao@silva.com" required> 
+                    
+                    <label for="telefone"> Telefone (com DDD)</label>
+                    <input type="tel" id="telefone" nome="telefone" placeholder="(xx) xxxx-xxx" pattern="[0-9]+$" maxlength="15" required>
+                </div>
+                <div class="maioridade">
+                    <label>Tem mais de 18 anos: </label>
+                        <label>
+                            <input type="radio" name="affirmation" value="yes">Sim, tenho mais de 18 anos.
+                        </label>
+                        <label>
+                            <input type="radio" name="affirmation" value="no">Não.
+                        </label>
+                    </label>
+                </div>
+
+                <div class="lugares">
+                <label for="places" class="lugares">Selecione qual Lugar de CG você pretende conhecer:</label>
+                <select id="places" required>
+                    <option selected disabled value="">Escolha</option>
+                    <option>Parque das Nações</option>
+                    <option>Morro do Ernesto</option>
+                    <option>Orla Morena</option>
+                </select>
+                </div>
+                
+                <div class="interesses">
+                    <label>Quais são seus interesses na cidade?</label>
+                    <fieldset>
+                    <div class="selections" >
+                            <input type="checkbox" id="interesse_1" name="interesse_1" value="Turista">
+                            <label for="interesse_1">Turista;</label>
+                            <input type="checkbox" id="interesse_2" name="interesse_2" value="Residente">
+                            <label for="interesse_2">Residente;</label>
+                            <input type="checkbox" id="interesse_3" name="interesse_3" value="Estudante">
+                            <label for="interesse_3">Estudante;</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="coments">
+                    <label for="motivos">Nos conte um pouco do que despertou a sua vontade de conhecer Campo Grande: </label>
+                    <textarea type="text" id="motivos" rows=5></textarea>
+                </div>
+
+                <div class="botao">
+                    <button class="enviar" type="submit">Concluído</button>
+                    <button class="cancelar"type="reset">Cancelar</button>
+                </div>
+        </form>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
+

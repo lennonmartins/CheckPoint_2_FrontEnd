@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Teko:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://cdnstatic8.com/viagensecaminhos.com/wp-content/uploads/2021/05/av-afonso-pena-campo-grande.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+   
+}
+
+main{
+    display: flex;
+    justify-content: center; 
+    align-content: center;
+    padding-top: 15px;
+}
+.container {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-style:outset;
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: 450px;
+    height: 620px;
+    background-color: #e26a1aee;
+    color: black;
+    gap: 5px;   
+}
+
+div{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;    
+}
+
+div.selections {
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+}
+
+input:hover{
+    transform: scale(1.1);
+    background-color: rgb(247, 201, 181);
+}
+
+input{
+    height: 20px;
+    border-radius: 5px;
+    border-color: aliceblue;
+    border-style: groove;
+}
+
+textarea{ 
+    border-radius: 5px; 
+}
+textarea:hover{
+    transform: scale(1.1);
+    background-color: rgb(247, 201, 181);
+}
+
+.infos {
+    gap: 3px;
+}
+
+.coments{
+    gap: 3px;
+}
+
+.botao{
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+button{
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 5px;
+    color: whitesmoke;
+    border-style: none;
+    
+}
+
+.enviar{
+    cursor: pointer;
+    font-weight: 700;
+    background-color: rgb(85, 102, 62);
+
+}
+
+.cancelar{
+    padding: 4px;
+    font-weight: 700;
+    color: rgb(68, 63, 63);
+    background:rgb(201, 198, 198) ;      
+}
